@@ -1,0 +1,29 @@
+# colorscheme plugins
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'nanotech/jellybeans.vim'
+
+[[plugins]]
+repo = 'croaker/mustang-vim'
+
+[[plugins]]
+repo = 'altercation/vim-colors-solarized'
+
+[[plugins]]
+repo = 'therubymug/vim-pyte'
+
+[[plugins]]
+repo = 'freeo/vim-kalisi'
+
+[[plugins]]
+repo = 'haishanh/night-owl.vim'
+
+# apply colorscheme
+[[plugins]]
+repo = 'ujihisa/unite-colorscheme'
+hook_add = '''
+colorscheme molokai
+autocmd BufNewFile,BufRead *.yar,*.yara setlocal filetype=yara
+'''
